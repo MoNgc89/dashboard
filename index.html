@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="MontserratGC">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="assets/css/index.css">
+  <title>Dashboard de Seguimiento</title>
+</head>
+<body>
+
+  <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+    <div class="col-lg-10">
+      <a class="navbar-brand" href="#">MonGC Dashboard</a>
+      <button class="btn btn-link btn-sm text-white order-1 order-sm-0" onclick="toggled()">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+  <div class="col-lg-2">
+    <div class=" navbar" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item" style="color:white; padding: 0 15px">  <i class="fas fa-user"> </i>  </li>
+        <li class="nav-item" style="color:white; padding: 0 15px">  <i class="fas fa-door-closed"> </i>  </li>
+      </ul>
+    </div>
+  </div>
+
+  </nav>
+
+  <div id="wrapper">
+
+    <ul class="sidebar navbar-nav" id="toggle">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Dashboard</span>
+        </a>
+      </li>
+
+      <li class="nav-item ">
+        <a class="nav-link" href="#">
+          <i class="fas fa-fw fa-folder"></i>
+          <span>Líneas de Negocio</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fas fa-fw fa-chart-area"></i>
+          <span>Reportes</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="tables.html">
+          <i class="fas fa-clock"></i>
+          <span>Producción</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="tables.html">
+          <i class="fas fa-industry"></i>
+          <span>KPI</span></a>
+      </li>
+    </ul>
+
+    <div class="container-fluid">
+
+      <ol class="breadcrumb"> <li class="breadcrumb-item">Dashboard</li> <li class="breadcrumb-item">Inicio</li> </ol>
+
+      <div class="card mb-3">
+        <div class="card-header text-center">
+          Líneas de Negocio</div>
+        <div class="card-body">
+          <img class="img-fluid" src="assets/images/graficos-dash.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="card-header text-center">
+          <i class="fas fa-chart-area"></i>
+          Area Chart Example</div>
+        <div class="card-body">
+
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="card-header text-center">
+          <i class="fas fa-table"></i>
+          Data Table Example</div>
+        <div class="card-body">
+          <div class="table-responsive">
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+<script src="assets/js/index.js"></script>
+</body>
+</html>
